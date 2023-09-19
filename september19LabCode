@@ -1,0 +1,5 @@
+import openai;
+openai.api_key = "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"
+completion = openai.ChatCompletion.create(model="gpt-3.5-turbo",
+                                          messages=[{"role":"user", "content":"tell me about the von Neumann model"}])
+print(completion.choices[0].message.content)
